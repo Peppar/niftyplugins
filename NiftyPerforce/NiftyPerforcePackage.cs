@@ -172,7 +172,7 @@ namespace NiftyPerforce
 
             ThreadHelper.ThrowIfNotOnUIThread();
 
-            var profferCommands3 = base.GetService(typeof(SVsProfferCommands)) as IVsProfferCommands3;
+            var profferCommands3 = GetService(typeof(SVsProfferCommands)) as IVsProfferCommands3;
             RemoveCommandBar("NiftyPerforceCmdBar", profferCommands3);
             RemoveCommandBar("NiftyPerforce", profferCommands3);
 
